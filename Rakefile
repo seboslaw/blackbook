@@ -21,6 +21,7 @@ Hoe.new('blackbook', Blackbook::VERSION) do |p|
   # p.changes        = p.paragraphs_of('History.txt', 0..1).join("\n\n")
   p.extra_deps    << [ "mechanize", ">= 0.7.0" ]
   p.extra_deps    << [ "fastercsv", ">= 1.2.0" ]
+  p.extra_deps    << [ "vpim", ">= 0.695" ]
   p.clean_globs << 'coverage'
   p.clean_globs << 'pkg'
   p.clean_globs << 'doc'

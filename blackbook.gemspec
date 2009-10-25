@@ -1,7 +1,7 @@
 --- !ruby/object:Gem::Specification 
 name: blackbook
 version: !ruby/object:Gem::Version 
-  version: 1.0.5
+  version: 1.0.6
 platform: ruby
 authors: 
 - Contentfree
@@ -54,6 +54,16 @@ dependencies:
         version: 1.2.0
     version: 
 - !ruby/object:Gem::Dependency 
+  name: vpim
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 0.695
+    version:
+- !ruby/object:Gem::Dependency 
   name: hoe
   type: :runtime
   version_requirement: 
@@ -87,6 +97,7 @@ files:
 - lib/blackbook/importer/aol.rb
 - lib/blackbook/importer/base.rb
 - lib/blackbook/importer/csv.rb
+- lib/blackbook/importer/vcf.rb
 - lib/blackbook/importer/gmail.rb
 - lib/blackbook/importer/hotmail.rb
 - lib/blackbook/importer/page_scraper.rb
@@ -126,6 +137,7 @@ files:
 - test/test_blackbook_importer_aol.rb
 - test/test_blackbook_importer_base.rb
 - test/test_blackbook_importer_csv.rb
+- test/test_blackbook_importer_vcf.rb
 - test/test_blackbook_importer_gmail.rb
 - test/test_blackbook_importer_hotmail.rb
 - test/test_blackbook_importer_page_scraper.rb
@@ -163,6 +175,7 @@ summary: Blackbook handles the nitty-gritty of importing contacts from various s
 test_files: 
 - test/test_blackbook_importer_aol.rb
 - test/test_blackbook_importer_csv.rb
+- test/test_blackbook_importer_vcf.rb
 - test/test_blackbook_importer_gmail.rb
 - test/test_blackbook_importer_yahoo.rb
 - test/test_blackbook_exporter_base.rb
